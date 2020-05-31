@@ -1,0 +1,53 @@
+html, body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+.timer {
+  font-size: 100px;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+button {
+  font-size: 20px;
+}
+.hide {
+  opacity: 0;
+}
+.wrapper {
+  margin-top: 100px;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    margin-top: 20px;
+  }
+}
+.intro,
+button {
+  transition: opacity 2s;
+}
+.intro {
+  padding: 30px;
+  max-width: 650px;
+  line-height: 1.5;
+  font-size: 14px;
+  top: 10%;
+  margin: auto;
+}
+#transcript {
+  transition: opacity 3s;
+  font-family: serif;
+  font-size: 24px;
+  font-style: italic;
+}
+.transcript-hide {
+  opacity: 0;
+}
+.transcript-show {
+  opacity: 1;
+}
+a,
+a:visited {
+  color: white;
+}
