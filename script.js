@@ -34,7 +34,7 @@ function start() {
         transcript.classList = 'transcript-show';
       }, 10000);
     }
-  }, 1000);
+  }, 200);
 }
 function fadeInText(t) {
   var transcript = document.getElementById('transcript');
@@ -48,13 +48,13 @@ function fadeInText(t) {
 function getTranscriptItem(current_time) {
   var fullTranscript = {
     520000: "&ldquo;Please, please, please! I can't breathe!&rdquo;",
-    481000: "&ldquo;Please man.&rdquo;",
-    475000: "&ldquo;I can't breathe.&rdquo;",
-    470000: "&ldquo;I'm about to die.&rdquo;",
+    495000: "&ldquo;Please man.&rdquo;",
+    485000: "&ldquo;I can't breathe.&rdquo;",
+    475000: "&ldquo;I'm about to die.&rdquo;",
     465000: "&ldquo;I can't breathe. I can't breathe.&rdquo;",
-    460000: "(Still kneeling) &ldquo;Get in the car!&rdquo; &ldquo;I will!&rdquo;",
-    455000: "(Still kneeling) &ldquo;Get up, get in the car!&rdquo; &ldquo;I can't move.&rdquo;",
-    450000: "(Still kneeling) &ldquo;Get up, and get in the car!&rdquo; &ldquo;Mama! Mama!.&rdquo;",
+    455000: "(Still kneeling) &ldquo;Get in the car!&rdquo; &ldquo;I will!&rdquo;",
+    445000: "(Still kneeling) &ldquo;Get up, get in the car!&rdquo; &ldquo;I can't move.&rdquo;",
+    435000: "(Still kneeling) &ldquo;Get up, and get in the car!&rdquo; &ldquo;Mama! Mama!&rdquo;",
     407000: "An ambulance is called.",
     380000: "&ldquo;Everything hurts. Some water or something, please.&rdquo;",
     350000: "&ldquo;I can't breathe officer.&rdquo; &ldquo;Shut up.&rdquo; &ldquo;They gonna kill me.&rdquo;",
@@ -70,7 +70,7 @@ function getTranscriptItem(current_time) {
   }
   function isInTimeWindow(timestamp) {
     var t = parseInt(timestamp);
-    if (current_time >= t - 500 && current_time <= t + 500) {
+    if (current_time >= t - 100 && current_time <= t + 100) {
       return true;
     }
     return false;
