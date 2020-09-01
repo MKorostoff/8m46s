@@ -61,7 +61,7 @@ function getTranscriptItem(current_time) {
     227000: "&ldquo;He's not responsive right now!&rdquo; -bystander",
     173000: "After 5 minutes and 50 seconds, George Floyd becomes unresponsive.",
     107000: "&ldquo;He's not fucking moving!&rdquo; -bystander",
-    1: "After 8 minutes and 43 seconds, Derek Chauvin removed his knee from George Floyd's neck. Mr. Floyd was later pronounced dead."
+    1: "After 8 minutes and 46 seconds, Derek Chauvin removed his knee from George Floyd's neck. Mr. Floyd was later pronounced dead."
   };
   for (var timestamp in fullTranscript) {
     if (isInTimeWindow(timestamp)) {
